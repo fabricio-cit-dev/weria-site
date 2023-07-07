@@ -52,7 +52,7 @@ const HeaderOne = () => {
                       className="section-link"
                       onClick={() => handleClickScroll("banner")}
                     >
-                      <img src={logoImage} alt="Incript Logo" style={{height:"110px", width: "220px", objectFit: "scale-down"}} />
+                      <img src={logoImage} alt="Incript Logo" style={{height:"110px", width: "220px", objectFit: "contain", filter: "brightness(0) invert(1)"}} />
                     </Link>
                   </div>
 

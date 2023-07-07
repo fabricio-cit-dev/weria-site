@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import SlickSlider from "../SlickSlider/SlickSlider";
-import icon01 from "../../assets/img/icon/Icon 03 TEAM.png";
-import icon02 from "../../assets/img/icon/Icon UI-UX.png";
-import icon03 from "../../assets/img/icon/Untitled-33 05 Digital transformation.png";
-import icon04 from "../../assets/img/icon/Icon 01 SOFTWARE.png";
-import icon05 from "../../assets/img/icon/Icon 02 ERP.png";
+import icon01 from "../../assets/img/icon/devops.png";
+import icon02 from "../../assets/img/icon/inteligencia-artificial.png";
+import icon03 from "../../assets/img/icon/iot1.png";
 import WhyChooseUsItem from "./WhyChooseUsItem";
-import CountDownOne from "../CountDown/CountDownOne";
 
 const WhyChooseUs = () => {
   const slickSettings = {
@@ -15,7 +12,7 @@ const WhyChooseUs = () => {
     speed: 1000,
     autoplay: true,
     arrows: false,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -57,166 +54,45 @@ const WhyChooseUs = () => {
       src: icon01,
       alt: "",
       link: "/",
-      title: "Team Allocation",
-      description: `Impulsione seus projetos com equipes altamente qualificadas. Nossa alocação
-      estratégica garante que você tenha os especialistas certos para atender às
-      demandas do seu projeto. Aumente a eficiência e acelere o sucesso com talentos
-      sob medida."`,
+      title: "Weria Devops",
+      description: `Os maiores desafios dos negócios modernos é entregar software de alta qualidade e com rapidez, onde a abordagem tradicional de desenvolvimento de software, na qual as equipes de desenvolvimento e operações são separadas, não conseguia atender às demandas do mercado. Pensando nisso criamos a oferta Weria DevOps, um conjunto de práticas de cultura, processos e ferramentas com a finalidade de promover a integração das áreas de negócio de desenvolvimento e sustentação de software e operações de TI, para garantir o aumento de produtividade, agilidade, eficiência e disponibilidade dos seus softwares, permitindo que a nossa equipe responda rapidamente às suas necessidades entregando valor com inovação e melhoria contínua, fazendo uso de tecnologias automatizadas para garantir que as aplicações sejam entregues de forma confiável e segura, facilitando a resolução de problemas rapidamente em caso de falhas.`,
     },
     {
       src: icon02,
       alt: "",
       link: "/",
-      title: "UI / UX",
-      description: `Encante seus clientes com designs envolventes e experiências do usuário
-      intuitivas. Nossa abordagem centrada no usuário combina pesquisa, análise e
-      criatividade para criar interfaces atraentes e funcionais. Destaque-se no mercado
-      com soluções de UI/UX de alta qualidade.`,
+      title: "Weria IA",
+      description: `A Inteligência Artificial (IA) tem evoluído rapidamente, e hoje é uma área de pesquisa ativa que envolve a criação de algoritmos e sistemas computacionais capazes de aprender, tomar decisões e realizar tarefas sem intervenção humana. A Weria IA é uma combinação de equipe técnica especializada com a escolha da ferramenta certa dependendo do tipo de tarefa de aprendizado de máquina que se deseja realizar. Fazemos isso por meio da identificação da melhor abordagem de inteligência artificial a ser utilizada, realizando um diagnóstico do tipo de problema a resolver, o conjunto de dados disponíveis, os recursos computacionais disponíveis e os objetivos de negócios específicos.`,
     },
     {
       src: icon03,
       alt: "",
       link: "/",
-      title: "Digital Transformation",
-      description: `Prepare-se para o futuro digital e conquiste uma vantagem competitiva. Nossa
-      abordagem de transformação digital combina estratégia, tecnologia e mudança
-      organizacional. Trabalhamos em parceria com você para identificar oportunidades,
-      implementar soluções inovadoras e impulsionar a transformação em toda a sua
-      organização.`,
+      title: "Weria IoT",
+      description: `IoT, Internet das Coisas, ou Internet of Things em inglês, permite que as coisas “conversem” entre si e com outros dispositivos conectados à Internet, possibilitando a automação de tarefas, a melhoria da eficiência e a coleta de dados para a tomada de decisões baseadas em dados. Além disso, a IoT está revolucionando vários setores, como a indústria, a saúde, a agricultura e a segurança.Nessa era de tantas inovações, a Weria IoT veio para entregar soluções que variam de acordo com as necessidades específicas de cada empresa ou usuário. Algumas dessas soluções incluem Smart Home, Wearables, Agtech, Health Tech, Manutenção Preditiva, Cidades Inteligentes e muitas outras. Além dessas soluções customizadas, a Weria IoT possui seus próprios produtos, confira aqui.`,
     },
-    {
-      src: icon04,
-      alt: "",
-      link: "/",
-      title: "Desenvolvimento de Software",
-      description: `Crie soluções de software personalizadas que atendam às suas necessidades
-      exclusivas. Nossa equipe de desenvolvedores altamente qualificados segue um
-      processo ágil, desde a análise de requisitos até o desenvolvimento e entrega do
-      software. Transforme sua visão em realidade com soluções de software sob
-      medida.`,
-    },                  
-    {
-      src: icon05,
-      alt: "",
-      link: "/",
-      title: "ERP",
-      description: `Obtenha o máximo do seu sistema ERP TOTVS Protheus com nossa consultoria
-      especializada. Nossos consultores experientes em Protheus realizam análises
-      detalhadas, identificam oportunidades de otimização e implementam soluções
-      personalizadas. Alcance a eficiência operacional e o sucesso com nossa expertise
-      em Protheus.`,
-    },                  
-    {
-      src: icon01,
-      alt: "",
-      link: "/",
-      title: "Team Allocation",
-      description: `Impulsione seus projetos com equipes altamente qualificadas. Nossa alocação
-      estratégica garante que você tenha os especialistas certos para atender às
-      demandas do seu projeto. Aumente a eficiência e acelere o sucesso com talentos
-      sob medida."`,
-    },
-    {
-      src: icon02,
-      alt: "",
-      link: "/",
-      title: "UI / UX",
-      description: `Encante seus clientes com designs envolventes e experiências do usuário
-      intuitivas. Nossa abordagem centrada no usuário combina pesquisa, análise e
-      criatividade para criar interfaces atraentes e funcionais. Destaque-se no mercado
-      com soluções de UI/UX de alta qualidade.`,
-    },
-    {
-      src: icon03,
-      alt: "",
-      link: "/",
-      title: "Digital Transformation",
-      description: `Prepare-se para o futuro digital e conquiste uma vantagem competitiva. Nossa
-      abordagem de transformação digital combina estratégia, tecnologia e mudança
-      organizacional. Trabalhamos em parceria com você para identificar oportunidades,
-      implementar soluções inovadoras e impulsionar a transformação em toda a sua
-      organização.`,
-    },
-    {
-      src: icon04,
-      alt: "",
-      link: "/",
-      title: "Desenvolvimento de Software",
-      description: `Crie soluções de software personalizadas que atendam às suas necessidades
-      exclusivas. Nossa equipe de desenvolvedores altamente qualificados segue um
-      processo ágil, desde a análise de requisitos até o desenvolvimento e entrega do
-      software. Transforme sua visão em realidade com soluções de software sob
-      medida.`,
-    },                  
-    {
-      src: icon05,
-      alt: "",
-      link: "/",
-      title: "ERP",
-      description: `Obtenha o máximo do seu sistema ERP TOTVS Protheus com nossa consultoria
-      especializada. Nossos consultores experientes em Protheus realizam análises
-      detalhadas, identificam oportunidades de otimização e implementam soluções
-      personalizadas. Alcance a eficiência operacional e o sucesso com nossa expertise
-      em Protheus.`,
-    },                  
   ];
 
-  const initalState = 0;
-  const [count, setCount] = useState(initalState);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCount((old) => (old === 6 ? 0 : old + 1));
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const toMultiply = 100 / slider_items.length;
-
   return (
-    <section className="choose-area pb-130">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-xl-6">
-            <div className="section-title text-center mb-50">
-              <br />
-              <span className="sub-title">Por que nos escolher? </span>
-              <h2 className="title">
-                Por que somos os melhores para o seu <span>negócio?</span>
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <div className="row choose-active">
-          <SlickSlider settings={slickSettings}>
-            {slider_items.map((item, index) => (
-              <div key={index} className="col-lg-3">
-                <WhyChooseUsItem item={item} />
-              </div>
-            ))}
-          </SlickSlider>
-        </div>
-
-        {/*<div className="slide-progressbar">
-          <div
-            style={{
-              // width: `${count * toMultiply}%`,
-              backgroundSize: `${count * toMultiply}% 100%`,
-            }}
-            className="slide-filler"
-          />
-          </div> */}
-        {/* <div
-          className="slide-progress"
-          role="progressbar"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <span className="slider__label sr-only"></span>
-        </div> */}
+    <section className="choose-area">
+      <div className="section-title text-center mb-50">
+        <br />
+        <span className="sub-title">Nossas Soluções</span>
+        <h2 className="title">
+          soluções que visam melhorar e automatizar processos em diferentes
+          setores!
+        </h2>
       </div>
+
+      <SlickSlider settings={slickSettings}>
+        {slider_items.map((item, index) => (
+          <div key={index}>
+            <WhyChooseUsItem item={item} />
+          </div>
+        ))}
+      </SlickSlider>
+
+      {/* Restante do código */}
     </section>
   );
 };

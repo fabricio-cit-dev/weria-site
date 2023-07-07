@@ -73,7 +73,7 @@ const TeamOne = () => {
             <div className="section-title text-center mb-70">
               <span className="sub-title">Nosso Time</span>
               <h2 className="title">
-                Uma equipe de <br /> <span>Liderança</span>
+              Profissionais experientes, <br />resultados <span>fantásticos</span>
               </h2>
             </div>
           </div>

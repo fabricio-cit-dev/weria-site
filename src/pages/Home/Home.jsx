@@ -62,7 +62,7 @@ const CookieBanner = () => {
             >
               <button
                 style={{
-                  backgroundColor: "#aa13b0",
+                  backgroundColor: "#f8ad22",
                   fontWeight: "bold",
                   color: "#fff",
                   border: "none",

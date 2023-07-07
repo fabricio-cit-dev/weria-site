@@ -1,5 +1,5 @@
 import React from "react";
-import img01 from "../../assets/img/images/imagem-about.png";
+import img01 from "../../assets/img/images/ai-nuvem-com-cabeca-de-robo.jpg";
 import { Link } from "react-router-dom";
 import ms from "../../assets/img/parceiros-redimensionadas/logo-ms.png";
 import weria from "../../assets/img/parceiros-redimensionadas/Weria PNG 05 Artboard 6 Copy 3.png";
@@ -31,7 +31,7 @@ const WhoWeAre = (props) => {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="about-img">
-              <img src={img01} alt="logo-whoweare" />
+              <img src={img01} alt="logo-whoweare" style={{borderRadius: "50px"}} />
             </div>
           </div>
           <div className="col-lg-6">
@@ -41,7 +41,7 @@ const WhoWeAre = (props) => {
                   Construindo um <span>futuro</span> automatizado
                 </h2>
               </div>
-              <p style={{ color: "white" }}>
+              <p style={{ color: "white", textAlign: "justify" }}>
                 Na nossa empresa, estamos comprometidos em ajudar nossos
                 clientes a construir um futuro melhor usando a tecnologia de IA
                 e IOT. Acreditamos que a IA tem o potencial de revolucionar
@@ -70,12 +70,6 @@ const WhoWeAre = (props) => {
             <div class="slider-partners">
               <div class="slide-track">
                 <div class="slide-partners">
-                  <img src={ms} width="100%" alt="" />
-                </div>
-                <div class="slide-partners">
-                  <img src={weria} width="100%" alt="" />
-                </div>
-                <div class="slide-partners">
                   <img
                     src={newin}
                     // height="130"
@@ -101,15 +95,49 @@ const WhoWeAre = (props) => {
                 </div>
                 <div class="slide-partners">
                   <img
-                    src={ms}
-                    // height="90"
+                    src={newin}
+                    // height="130"
                     width="100%"
                     alt=""
                   />
                 </div>
                 <div class="slide-partners">
                   <img
-                    src={weria}
+                    src={ares}
+                    // height="90"
+                    width="60%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={bz}
+                    // height="90"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+                
+                
+                <div class="slide-partners">
+                  <img
+                    src={newin}
+                    // height="130"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={ares}
+                    // height="90"
+                    width="60%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={bz}
                     // height="90"
                     width="100%"
                     alt=""
@@ -141,7 +169,23 @@ const WhoWeAre = (props) => {
                 </div>
                 <div class="slide-partners">
                   <img
-                    src={ms}
+                    src={newin}
+                    // height="130"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={ares}
+                    // height="90"
+                    width="60%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={bz}
                     // height="90"
                     width="100%"
                     alt=""
@@ -149,7 +193,47 @@ const WhoWeAre = (props) => {
                 </div>
                 <div class="slide-partners">
                   <img
-                    src={weria}
+                    src={newin}
+                    // height="130"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={ares}
+                    // height="90"
+                    width="60%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={bz}
+                    // height="90"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={newin}
+                    // height="130"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={ares}
+                    // height="90"
+                    width="60%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={bz}
                     // height="90"
                     width="100%"
                     alt=""

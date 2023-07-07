@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoImage from "../../../src/assets/img/logo/Incript 06 Artboard 6.png";
+import logoImage from "../../../src/assets/img/logo/weria-logo-preto.png";
 import { scrollToTop } from "../../lib/helpers";
 import FooterContact from "./FooterContacts";
 
@@ -31,12 +31,12 @@ const FooterOne = () => {
                   className="footer-widget"
                 >
                   <Link to="/" className="f-logo">
-                    <img src={logoImage} alt="Incript Logo" />
+                    <img src={logoImage} alt="Incript Logo" style={{objectFit: "fill"}}/>
                   </Link>
                   <div className="footer-content">
                     <p>
-                      <span className="footer-titulo">Software's House</span><br/>
-                      Dream can be a ideas,<br/> ideas can be a business.
+                      <span className="footer-titulo">Conectando Ideias</span><br/>
+                      Soluções inovadoras e inteligentes para ajudar nossos clientes a transformar seus negócios e alcançar o sucesso! 
                     </p>
                     <ul className="footer-social">
                       <li>

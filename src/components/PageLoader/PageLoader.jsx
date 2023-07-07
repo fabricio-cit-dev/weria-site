@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import cn from "classnames";
 import styles from "./PageLoader.module.css";
-import loadingimage from "../../assets/img/logo/logo-redimensionada.png"
+import loadingimage from "../../assets/img/logo/weria-logo-branca.png"
 
 const PageLoader = () => {
   const [loading, setLoading] = useState(true);
