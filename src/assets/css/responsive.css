@@ -800,16 +800,32 @@
   }
   .slider-partners {
     margin-top: -50px;
-  }  
+    min-height: 15vh;
+  }
+  .slider-partners img {
+    margin: 0;
+    height: 300px;
+    width: auto;
+    image-rendering: auto;
+  } 
   .about-img img.img-two {
     display: none;
   }
+  .choose-area {
+    min-height: 115vh;
+  }
+  .choose-item {
+    min-height: 85vh;
+  }
   .team-wrapper {
-    height: 110%;
-    overflow-y: initial;
+    min-height: 135vh;
+    background-position: center;
   }
   .team-area {
     height: 100%;
+  }
+  .time-div {
+    flex-direction: column;
   }
   .section-title .title {
     font-size: 28px;
@@ -863,7 +879,15 @@
   .footer-area {
     height: 100%;
   }
-
+  .footer-top{
+    flex-direction: column;
+  }
+  .footer-widget {
+    margin: 0;
+  }
+  .footer-contacts{
+    margin-bottom: 30px;
+  }
   .banner-social-wrap {
     display: none;
   }
@@ -1215,16 +1239,19 @@
   .section-title {
     margin-top: 0;
   }
-  .choose-item {
-    height: 55vh;
-    margin-bottom: -20px;
+  .choose-area {
+    height: 170%;
   }
-  .chart-bg {
-    height: 100vh;
+  .choose-item {
+    min-height: 100vh;
+    max-height: 100%;
   }
   .team-wrapper {
-    height: 250%;
-    overflow-y: initial;
+    min-height: 200%;
+  }
+  .time-div {
+    display: flex;
+    flex-direction: column;
   }
   .container,
   .custom-container {
@@ -1286,10 +1313,14 @@
     margin-top: -130px;
   }
   .footer-area {
-    height: 60%;
+    height: 100%;
   }
-  .footer-bottom {
-    margin-top: 35%;
+  .footer-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 3rem;
   }
   .blog-post-content > .title {
     font-size: 28px;

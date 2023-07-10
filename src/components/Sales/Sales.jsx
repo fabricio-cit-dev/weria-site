@@ -1,86 +1,108 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles";
-import IconNest from "../../assets/img/icon/play.png";
-import aparty from "../../assets/img/projects/APARTY MOCKUP 2.png";
-import Ares from "../../assets/img/projects/ares mockup sem fundo.png";
-import ms from "../../assets/img/projects/mockup ms sem fundo.png";
-import cl from "../../assets/img/projects/mockup tela sem fundo.png";
+import icon01 from "../../assets/img/icon/icon_choose.png";
+import icon02 from "../../assets/img/icon/icon_valores.png";
+import icon03 from "../../assets/img/icon/icon_move.png";
+import SlickSliderSales from "./SlickSliderSales";
+import SliderSales from "./slider-sales"
+import SalesItem from "./slider-sales";
 
 const Sales = () => {
-  let portfolio = [
+  const slickSettings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
+  };
+
+  const slider_items = [
     {
-      id: 1,
-      image: ms,
-      description: "Software",
-      changingText: "personalizado",
-      endtext: "para seu negócio",
+      src: icon01,
+      alt: "",
+      link: "/",
+      title: "Por que Nos Escolher?",
+      description: `Existem muitas empresas de IA no mercado, mas nossa empresa se destaca por ter uma equipe de especialistas altamente qualificados em diversas áreas, incluindo inteligência artificial, aprendizado de máquina, análise de dados e engenharia de software.`,
     },
     {
-      id: 2,
-      image: cl,
-      description: "Software",
-      changingText: "sob medida",
-      endtext: "para seu negócio",
+      src: icon02,
+      alt: "",
+      link: "/",
+      title: "Nossos Valores",
+      description: `Em nossa empresa, acreditamos que nossos valores são o que nos guiam em nosso trabalho e nos ajudam a alcançar nossos objetivos. Nós nos esforçamos para sempre manter esses valores em mente em tudo o que fazemos.`,
     },
     {
-      id: 3,
-      image: Ares,
-      description: "Software",
-      changingText: "exclusivo",
-      endtext: "para seu negócio",
-    },
-    {
-      id: 4,
-      image: aparty,
-      description: "Software",
-      changingText: "especializado",
-      endtext: "para seu negócio",
+      src: icon03,
+      alt: "",
+      link: "/",
+      title: "O Que Nos Move?",
+      description: `É a possibilidade de ajudar nossos clientes a alcançar seus objetivos de negócios de maneira mais eficaz e eficiente. Estamos entusiasmados com o potencial da inteligência artificial para transformar a maneira como as empresas operam e estamos comprometidos em ajudar nossos clientes a aproveitar ao máximo essa tecnologia.`,
     },
   ];
-
-  const [currentItemIndex, setCurrentItemIndex] = useState(0);
-
-  const showPreviousItem = () => {
-    if (currentItemIndex > 0) {
-      setCurrentItemIndex(currentItemIndex - 1);
-    }
-  };
-
-  const showNextItem = () => {
-    if (currentItemIndex < portfolio.length - 1) {
-      setCurrentItemIndex(currentItemIndex + 1);
-    } else {
-      setCurrentItemIndex(0); // Volta para o primeiro item
-    }
-  };
-
-  const currentItem = portfolio[currentItemIndex];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      showNextItem();
-    }, 4000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [currentItemIndex]);
 
   return (
     <section id="portfolio" className="chart-area chart-bg ">
       <div className="sub-title-div">
-        <span className="sub-title-about">Alguns de nossos projetos</span>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <span className="sub-title-about">Nossos Diferenciais</span>
       </div>
-      <div className="projetos" style={styles.header}>
-        <div className="texto-projetos">
+      <div className="projetos" style={{display: "flex", flexDirection: ""}}>
+        <SlickSliderSales settings={slickSettings}>
+          {slider_items.map((item, index) => (
+            <div key={index}>
+              <SalesItem item={item} />
+            </div>
+          ))}
+        </SlickSliderSales>
+
+        {/* <div className="texto-projetos">
           <td>
             {currentItem.description} <tr> {currentItem.changingText} </tr>{" "}
             <br />
             {currentItem.endtext}
           </td>
-        </div>
+        </div> */}
 
-        <div style={styles.containerImage}>
+        {/* <div style={styles.containerImage}>
           <div class="slide">
             <img
               src={currentItem.image}
@@ -88,10 +110,10 @@ const Sales = () => {
               style={{ marginLeft: "0" }}
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
-      <div style={styles.containerButtons}>
+      {/* <div style={styles.containerButtons}>
         <button style={styles.button} onClick={showPreviousItem}>
           <img src={IconNest} alt="ms-project" style={styles.imageLeftSide} />
         </button>
@@ -99,7 +121,7 @@ const Sales = () => {
         <button style={styles.button} onClick={showNextItem}>
           <img src={IconNest} alt="ms-project" style={styles.imageRightSide} />
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };

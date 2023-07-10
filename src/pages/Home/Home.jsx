@@ -28,8 +28,8 @@ const CookieBanner = () => {
 
   const handleConsent = () => {
     setCookies("cookie_consent", true, { path: "/" });
-    
-    localStorage.setItem('user_language',navigator.language)
+
+    localStorage.setItem("user_language", navigator.language);
     setShowBanner(false);
   };
 
@@ -92,12 +92,12 @@ const Home = () => {
         <Banner />
         <WhoWeAre />
         <WhyChooseUs />
+        <div className="team-wrapper">
+          <TeamOne />
+        </div>
         <Sales />
         <div className="area-bg">
           <Roadmap />
-        </div>
-        <div className="team-wrapper">
-          <TeamOne />
         </div>
         <FooterOne />
       </main>

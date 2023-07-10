@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import cn from "classnames";
-import logoImage from "../../../src/assets/img/logo/weria-logo-preto.png";
+import logoImage from "../../../src/assets/img/logo/weria-logo-nome-branca.png";
 import { handleClickScroll } from "../../lib/helpers";
 
 const HeaderOne = () => {
@@ -79,12 +79,20 @@ const HeaderOne = () => {
                           Sobre nós
                         </Link>
                       </li>
+                      <li className={cn(hash === "#soluctions" && "active")}>
+                        <Link
+                          className="section-link"
+                          onClick={() => handleClickScroll("soluctions")}
+                        >
+                          Soluções
+                        </Link>
+                      </li>
                       <li className={isActiveLink("#portfolio")}>
                         <Link
                           className="section-link"
                           onClick={() => handleClickScroll("portfolio")}
                         >
-                          Portfólio
+                          Diferenciais
                         </Link>
                       </li>
                       <li className={isActiveLink("#roadmap")}>
@@ -175,6 +183,17 @@ const HeaderOne = () => {
                           Sobre nós
                         </Link>
                       </li>
+                      <li className={isActiveLink("#soluctions")}>
+                        <Link
+                          className="section-link"
+                          onClick={() => {
+                            handleClickScroll("soluctions");
+                            toggleMobileMenu();
+                          }}
+                        >
+                          Soluções
+                        </Link>
+                      </li>
                       <li className={isActiveLink("#portfolio")}>
                         <Link
                           className="section-link"
@@ -183,7 +202,7 @@ const HeaderOne = () => {
                             toggleMobileMenu();
                           }}
                         >
-                          Portfólio
+                          Diferenciais
                         </Link>
                       </li>
                       <li className={isActiveLink("#roadmap")}>

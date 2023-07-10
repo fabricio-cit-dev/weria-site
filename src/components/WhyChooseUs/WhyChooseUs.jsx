@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="choose-area">
+    <section id="soluctions" className="choose-area">
       <div className="section-title text-center mb-50">
         <br />
         <span className="sub-title">Nossas Soluções</span>
@@ -91,8 +91,6 @@ const WhyChooseUs = () => {
           </div>
         ))}
       </SlickSlider>
-
-      {/* Restante do código */}
     </section>
   );
 };
