@@ -240,7 +240,7 @@ label {
 }
 
 ::selection {
-  background: #00c4f4;
+  background: #f48a00;
   color: #fff;
   text-shadow: none;
 }
@@ -4211,7 +4211,7 @@ select:focus {
 .footer-area {
   height: 100%;
   z-index: 1;
-  background: rgb(12, 7, 7);
+  background: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4396,7 +4396,7 @@ select:focus {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgb(255 255 255 / 6%);
+  border-top: 1px solid rgba(255, 255, 255, 0.247);
   padding: 27px 0;
 }
 

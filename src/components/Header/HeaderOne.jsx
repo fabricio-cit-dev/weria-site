@@ -5,6 +5,13 @@ import logoImage from "../../../src/assets/img/logo/weria-logo-nome-branca.png";
 import { handleClickScroll } from "../../lib/helpers";
 
 const HeaderOne = () => {
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [stickyClass, setStickyClass] = useState({
     fixed: "",
     header: "sticky-menu",
@@ -49,14 +56,31 @@ const HeaderOne = () => {
                 <nav className="menu-nav">
                   <div className="logo">
                     <Link
+                      to="/"
                       className="section-link"
-                      onClick={() => handleClickScroll("banner")}
+                      onClick={() => handleScrollToSection("banner")}
                     >
-                      <img src={logoImage} alt="Incript Logo" style={{height:"110px", width: "220px", objectFit: "contain", filter: "brightness(0) invert(1)"}} />
+                      <img
+                        src={logoImage}
+                        alt="Incript Logo"
+                        style={{
+                          height: "110px",
+                          width: "220px",
+                          objectFit: "contain",
+                          filter: "brightness(0) invert(1)",
+                        }}
+                      />
                     </Link>
                   </div>
 
-                  <div className={cn("navbar-wrap", "main-menu", "d-none", "d-lg-flex")}>
+                  <div
+                    className={cn(
+                      "navbar-wrap",
+                      "main-menu",
+                      "d-none",
+                      "d-lg-flex"
+                    )}
+                  >
                     <ul className="navigation">
                       <li
                         className={cn(
@@ -65,48 +89,54 @@ const HeaderOne = () => {
                         )}
                       >
                         <Link
+                          to="/"
                           className="section-link"
-                          onClick={() => handleClickScroll("banner")}
+                          onClick={() => handleScrollToSection("banner")}
                         >
                           Home
                         </Link>
                       </li>
                       <li className={cn(hash === "#about" && "active")}>
                         <Link
+                          to="/#about"
                           className="section-link"
-                          onClick={() => handleClickScroll("about")}
+                          onClick={() => handleScrollToSection("about")}
                         >
                           Sobre nós
                         </Link>
                       </li>
                       <li className={cn(hash === "#soluctions" && "active")}>
                         <Link
+                          to="/#soluctions"
                           className="section-link"
-                          onClick={() => handleClickScroll("soluctions")}
+                          onClick={() => handleScrollToSection("soluctions")}
                         >
                           Soluções
                         </Link>
                       </li>
                       <li className={isActiveLink("#portfolio")}>
                         <Link
+                          to="/#portfolio"
                           className="section-link"
-                          onClick={() => handleClickScroll("portfolio")}
+                          onClick={() => handleScrollToSection("portfolio")}
                         >
                           Diferenciais
                         </Link>
                       </li>
                       <li className={isActiveLink("#roadmap")}>
                         <Link
+                          to="/#roadmap"
                           className="section-link"
-                          onClick={() => handleClickScroll("roadmap")}
+                          onClick={() => handleScrollToSection("roadmap")}
                         >
                           Como fazemos
                         </Link>
                       </li>
                       <li className={isActiveLink("#footer")}>
                         <Link
+                          to="/#footer"
                           className="section-link"
-                          onClick={() => handleClickScroll("footer")}
+                          onClick={() => handleScrollToSection("footer")}
                         >
                           Contato
                         </Link>
@@ -126,7 +156,9 @@ const HeaderOne = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className={cn("header-action", "d-none", "d-md-block")}>
+                    <div
+                      className={cn("header-action", "d-none", "d-md-block")}
+                    >
                       <ul>
                         <li className="header-lang">
                           <span className="selected-lang">PT-BR</span>
@@ -139,7 +171,9 @@ const HeaderOne = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className={cn("header-action", "d-none", "d-md-block")}></div>
+                  <div
+                    className={cn("header-action", "d-none", "d-md-block")}
+                  ></div>
                 </nav>
               </div>
 

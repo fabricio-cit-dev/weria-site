@@ -57,14 +57,14 @@ const Sales = () => {
       alt: "",
       link: "/",
       title: "Por que Nos Escolher?",
-      description: `Existem muitas empresas de IA no mercado, mas nossa empresa se destaca por ter uma equipe de especialistas altamente qualificados em diversas áreas, incluindo inteligência artificial, aprendizado de máquina, análise de dados e engenharia de software.`,
+      description: `Se você está procurando uma empresa que desenvolve soluções em IA, IoT e DevOps, é importante escolher uma equipe altamente qualificada e experiente. Nós somos a escolha certa para você. Nossa equipe é formada por especialistas em diversas áreas, incluindo inteligência artificial, aprendizado de máquina, análise de dados e engenharia de software. Isso significa que temos a capacidade de criar soluções personalizadas e inovadoras para atender às necessidades específicas do seu negócio. Além disso, estamos constantemente atualizando nossas habilidades e conhecimentos para garantir que nossos clientes recebam as soluções mais avançadas e eficientes. Então, se você quer uma equipe que possa fornecer soluções de IA, IoT e DevOps de alta qualidade, escolha-nos.`,
     },
     {
       src: icon02,
       alt: "",
       link: "/",
       title: "Nossos Valores",
-      description: `Em nossa empresa, acreditamos que nossos valores são o que nos guiam em nosso trabalho e nos ajudam a alcançar nossos objetivos. Nós nos esforçamos para sempre manter esses valores em mente em tudo o que fazemos.`,
+      description: `Como empresa de desenvolvimento de IoT, IA e DevOps, acreditamos que nossos valores são a essência do que fazemos. A transparência é um valor fundamental para nós, que mantemos em todos os aspectos do nosso trabalho, desde a comunicação com nossos clientes até a maneira como colaboramos como equipe. A integridade é outra parte essencial de nossa cultura, garantindo que sempre agimos com ética e honestidade em tudo o que fazemos. E, por fim, nosso compromisso com a excelência nos impulsiona a buscar constantemente a inovação e a excelência em nosso trabalho. Esses valores são a base do nosso sucesso e são o que nos guiam em nosso trabalho diário.`,
     },
     {
       src: icon03,
