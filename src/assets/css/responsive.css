@@ -811,6 +811,12 @@
   .about-img img.img-two {
     display: none;
   }
+
+  .SeloPartners {
+    width: 20%;
+    margin: 0;
+  }
+
   .choose-area {
     min-height: 115vh;
   }
@@ -1254,6 +1260,12 @@
     display: flex;
     flex-direction: column;
   }
+
+  .SeloPartners {
+    width: 25%;
+    margin: 0;
+  }
+
   .choose-item-sales {
     height: 70vh;
   }

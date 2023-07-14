@@ -12,6 +12,8 @@ import LayoutOne from "../../layouts/LayoutOne";
 import Cookie from "../../assets/img/logo/cookies.png";
 import styles from "./styles";
 import FooterOne from "../../components/Footer/FooterOne";
+import Faq from "../../components/Faq/Faq"
+import ContactOneForm from "../../components/Contact/ContactOneForm";
 
 const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(true);
@@ -91,6 +93,7 @@ const Home = () => {
         <CookieBanner />
         <Banner />
         <WhoWeAre />
+        <Faq />
         <WhyChooseUs />
         <div className="team-wrapper">
           <TeamOne />
@@ -99,6 +102,7 @@ const Home = () => {
         <div className="area-bg">
           <Roadmap />
         </div>
+        <ContactOneForm />
         <FooterOne />
       </main>
     </LayoutOne>

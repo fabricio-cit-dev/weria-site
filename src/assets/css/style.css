@@ -465,7 +465,7 @@ label {
   margin-top: 20px;
 }
 .cookie-banner button:hover {
-  background-color: #FFA500;
+  background-color: #ffa500;
 }
 
 /* 2. Header */
@@ -1083,7 +1083,7 @@ label {
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 2rem;  
+  gap: 2rem;
 }
 
 .banner-bg::before {
@@ -1163,7 +1163,8 @@ label {
   color: transparent;
   -webkit-text-stroke: 2px rgb(255, 255, 255);
   -webkit-text-fill-color: transparent;
-  text-shadow: 1px -1px 0 rgb(241, 168, 32), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+  text-shadow: 1px -1px 0 rgb(241, 168, 32), -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255);
 }
 
 .number-title {
@@ -1779,6 +1780,7 @@ label {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .slider-partners {
@@ -3013,10 +3015,11 @@ label {
 
 /* 13. Team */
 .time-div {
-  display: flex; 
-  flex: 1; 
-  flex-direction: "row"; 
+  display: flex;
+  flex: 1;
+  flex-direction: "row";
   gap: 1rem;
+  align-items: center;
 }
 
 .team-wrapper {
@@ -3192,16 +3195,32 @@ label {
 }
 
 .faq-area {
-  background-color: #a20bc5;
-  background-image: linear-gradient(
-    225deg,
-    #a20bc5 44%,
-    #dc1ecf 71%,
-    #f1a7e8 100%
-  );
+  background-color: #f49336;
   padding: 120px 0 130px;
   position: relative;
   z-index: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgLife {
+  filter: hue-rotate(170deg);
+  image-rendering: initial;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.imgLogoLife {
+  width: 50%;
+}
+
+.SeloPartners {
+  width: 12%;
+  filter: invert(1);
+  margin-top: 1rem;
 }
 
 .faq-wrap .accordion-item {
@@ -4013,25 +4032,43 @@ label {
 }
 
 .contact-form-wrap {
-  background-image: linear-gradient(180deg, #3e038d, #520386, #7505a5, #9407bb);
+  background-image: url("../img/images/fundo-moderno-de-plexo-com-formas-abstratas-de-baixo-poli.jpg");
   background-position: center;
   background-size: cover;
-  border-radius: 8px;
-  padding: 80px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .contact-form-wrap .form-grp {
   margin-bottom: 30px;
 }
 
+.DivForms {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  flex: .6;
+}
+
+.DivImageContact {
+  display: flex;
+  flex: .4;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-form-wrap .form-grp textarea,
 .contact-form-wrap .form-grp input {
   width: 100%;
   background: #fff;
-  border: 1px solid rgb(243, 239, 1);
+  border: 1px solid #ff7b00;
   border-radius: 5px;
   font-size: 16px;
-  color: #50097c;
+  color: #ff7300;
   font-weight: 400;
   padding: 18px 20px;
   height: 65px;
@@ -4051,12 +4088,14 @@ label {
 }
 
 .contact-form-wrap .submit-btn .btn {
-  background-image: linear-gradient(25deg, #3e038d, #6704aa, #8e06c8, #b60be7);
-  border: 1px solid #6704aa;
+  background-image: linear-gradient(25deg, #fa5a00, #fd8005, #ffa210, #ffc11a);
+  border: 3px solid transparent;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .contact-form-wrap .submit-btn .btn:hover {
-  border: 1px solid rgb(243, 239, 1);
+  border: 3px solid #ffc11a;
 }
 
 .forms-title {
@@ -4067,17 +4106,17 @@ label {
 
 select {
   width: 100%;
-  padding: 10px;
+  padding: 1.25rem;
   font-size: 16px;
-  border: 1px solid rgb(243, 239, 1);
+  border: 1px solid #ff7b00;
   border-radius: 4px;
   background-color: #fff;
-  color: #50097c;
+  color: #ff7300;
 }
 
 select:focus {
   outline: none;
-  border-color: #6c63ff;
+  border-color: #ff7300;
 }
 
 /* contact-two */

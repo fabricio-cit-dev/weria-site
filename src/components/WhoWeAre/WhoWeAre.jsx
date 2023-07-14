@@ -6,6 +6,7 @@ import weria from "../../assets/img/parceiros-redimensionadas/Weria PNG 05 Artbo
 import newin from "../../assets/img/parceiros-redimensionadas/Logo_Newin_Preto (1).png";
 import ares from "../../assets/img/parceiros-redimensionadas/ares_logo_preto-removebg-preview.png";
 import bz from "../../assets/img/parceiros-redimensionadas/Bz__01_Artboard_498-removebg-preview.png";
+import liferay from "../../assets/img/parceiros-redimensionadas/liferay-logo.png";
 const image = [];
 const partners_list = [
   { src: ms, title: "ms" },
@@ -13,6 +14,7 @@ const partners_list = [
   { src: newin, title: "newin" },
   { src: ares, title: "ares" },
   { src: bz, title: "bztech" },
+  { src: liferay, title: "liferay" },
 ];
 
 const handleScrollToSection = (sectionId) => {
@@ -31,7 +33,11 @@ const WhoWeAre = (props) => {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="about-img">
-              <img src={img01} alt="logo-whoweare" style={{borderRadius: "50px"}} />
+              <img
+                src={img01}
+                alt="logo-whoweare"
+                style={{ borderRadius: "50px" }}
+              />
             </div>
           </div>
           <div className="col-lg-6">
@@ -87,51 +93,9 @@ const WhoWeAre = (props) => {
                 </div>
                 <div class="slide-partners">
                   <img
-                    src={bz}
-                    // height="90"
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="slide-partners">
-                  <img
-                    src={newin}
+                    src={liferay}
                     // height="130"
                     width="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="slide-partners">
-                  <img
-                    src={ares}
-                    // height="90"
-                    width="60%"
-                    alt=""
-                  />
-                </div>
-                <div class="slide-partners">
-                  <img
-                    src={bz}
-                    // height="90"
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-                
-                
-                <div class="slide-partners">
-                  <img
-                    src={newin}
-                    // height="130"
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="slide-partners">
-                  <img
-                    src={ares}
-                    // height="90"
-                    width="60%"
                     alt=""
                   />
                 </div>
@@ -154,8 +118,16 @@ const WhoWeAre = (props) => {
                 <div class="slide-partners">
                   <img
                     src={ares}
-                    // height="90"
+                    // height="90%"
                     width="60%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={liferay}
+                    // height="130"
+                    width="100%"
                     alt=""
                   />
                 </div>
@@ -178,8 +150,16 @@ const WhoWeAre = (props) => {
                 <div class="slide-partners">
                   <img
                     src={ares}
-                    // height="90"
+                    // height="90%"
                     width="60%"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-partners">
+                  <img
+                    src={liferay}
+                    // height="130"
+                    width="100%"
                     alt=""
                   />
                 </div>
@@ -202,56 +182,16 @@ const WhoWeAre = (props) => {
                 <div class="slide-partners">
                   <img
                     src={ares}
-                    // height="90"
+                    // height="90%"
                     width="60%"
                     alt=""
                   />
                 </div>
                 <div class="slide-partners">
                   <img
-                    src={bz}
-                    // height="90"
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="slide-partners">
-                  <img
-                    src={newin}
+                    src={liferay}
                     // height="130"
                     width="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="slide-partners">
-                  <img
-                    src={ares}
-                    // height="90"
-                    width="60%"
-                    alt=""
-                  />
-                </div>
-                <div class="slide-partners">
-                  <img
-                    src={bz}
-                    // height="90"
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="slide-partners">
-                  <img
-                    src={newin}
-                    // height="130"
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="slide-partners">
-                  <img
-                    src={ares}
-                    // height="90"
-                    width="60%"
                     alt=""
                   />
                 </div>
