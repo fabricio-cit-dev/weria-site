@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { handleClickScroll } from "../../lib/helpers";
 import icon01 from "../../assets/img/icon/icon_choose.png";
 import icon02 from "../../assets/img/icon/icon_valores.png";
 import icon03 from "../../assets/img/icon/icon_move.png";
@@ -9,6 +11,18 @@ import Parceria1 from "../../assets/img/icon/partnership-1.png";
 import Parceria2 from "../../assets/img/icon/partnership-2.png";
 
 const Sales = () => {
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const { hash } = useLocation();
+  const isActiveLink = (id) => {
+    return id === hash ? "active" : "";
+  };
+
   return (
     <section id="portfolio" className="faq-area">
       <div className="container">
@@ -49,9 +63,15 @@ const Sales = () => {
               experiências digitais personalizadas sem abrir mão da velocidade,
               flexibilidade ou eficiência.
             </p>
-            <button type="submit" className="btn">
-              Solicite uma Demonstracao
-            </button>
+            <Link
+              to="/#contactform"
+              className="section-link"
+              onClick={() => handleScrollToSection("contactform")}
+            >
+              <button type="submit" className="btn">
+                Solicite uma Demonstracao
+              </button>
+            </Link>
           </div>
         </div>
       </div>

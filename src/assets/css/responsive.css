@@ -839,6 +839,9 @@
   .partner-wrap ul li {
     width: 100%;
   }
+  .choose-item-sales {
+    min-height: 70vh;
+  }
   .chart-content .nav-tabs .nav-item {
     padding: 0 15px 10px;
   }
@@ -867,6 +870,15 @@
   }
   .contact-form-wrap {
     padding: 35px 20px;
+    flex-direction: column;
+  }
+  .step-map::before {
+    top: 40%;
+    height: 60%;
+    left: 20px;
+  }
+  .step-dot {
+    height: 40px;
   }
   .footer-top .row [class*="col-"]:nth-child(2) .footer-widget {
     margin-left: 0;
@@ -1309,6 +1321,13 @@
   }
   .contact-form-wrap {
     padding: 45px 35px;
+    flex-direction: column;
+    min-height: 200vh;
+  }
+  .step-map::before {
+    left: 15px;
+    top: 35%;
+    height: 65%;
   }
   .banner-content .title {
     font-size: 32px;

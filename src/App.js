@@ -10,6 +10,7 @@ import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import Roadmap from "./components/Roadmap/Roadmap";
 import Faq from "./components/Faq/Faq";
+import ContactOneForm from "./components/Contact/ContactOneForm";
 
 function App() {
   useEffect(() => {
@@ -35,7 +36,8 @@ function App() {
         <Route path="/#about" element={<WhoWeAre />} />
         <Route path="/#choose" element={<WhyChooseUs />} />
         <Route path="/#roadmap" element={<Roadmap />} />
-        <Route path="/faq" element={<Faq />} />
+        <Route path="/#faq" element={<Faq />} />
+        <Route path="/#contactform" element={<ContactOneForm />} />
         <Route path="home-two" element={<HomeTwo />} />
         <Route path="blog" element={<Blog />} />
         <Route path="blog-details" element={<BlogDetailsPage />} />

@@ -2,32 +2,71 @@ import React from "react";
 import ContactImage from "../../assets/img/images/chat-image-removebg.png";
 import NameIcon from "../../assets/img/icon/icons8-nome-24.png";
 import EmailIcon from "../../assets/img/icon/icons8-nova-mensagem-24.png";
+import ProposalIcon from "../../assets/img/icon/icons8-documento-48.png";
+import TalkIcon from "../../assets/img/icon/icons8-conversa-48.png";
+import StartIcon from "../../assets/img/icon/icons8-começar-48-alt.png";
+import { IconCircleDot } from "@tabler/icons-react";
+import { IconPlayerPlayFilled } from '@tabler/icons-react';
 
 const ContactOneForm = () => {
   return (
-    <div className="contact-form-wrap">
+    <section id="contactform" className="contact-form-wrap">
       <div className="leftDiv">
-        <div className="DivImageContact">
-          <img className="ImageContact" src={ContactImage} />
-        </div>
         <div className="step-map">
+          <h2 className="step-map-title">Qual será o próximo passo?</h2>
+          <p className="step-map-subtitle">
+            Você está um passo mais perto de construir seu produto perfeito
+          </p>
           <div className="step">
-            <span className="step-number">1</span>
-            <span className="step-title">
-              Receba uma proposta personalizada rapidamente
+            <span className="step-dot">
+              <img src={ProposalIcon} />
             </span>
+            <div className="title-subtitle">
+              <div className="Number-title">
+                <span className="step-number">1.</span>
+                <span className="step-title">
+                  Receba uma proposta personalizada rapidamente
+                </span>
+              </div>
+              <p className="step-description">
+                Escopo, cronograma e preço necessários serão incluídos se você
+                nos fornecer informações detalhadas sobre um projeto.
+              </p>
+            </div>
           </div>
           <div className="step">
-            <span className="step-number">2</span>
-            <span className="step-title">
-              Converse conosco para discutir suas necessidades
+            <span className="step-dot">
+              <img src={TalkIcon} />
             </span>
+            <div className="title-subtitle">
+              <div className="Number-title">
+                <span className="step-number">2.</span>
+                <span className="step-title">
+                  Converse conosco para discutir suas necessidades
+                </span>
+              </div>
+              <p className="step-description">
+                Vamos nos familiarizar e discutir todas as variantes e opções
+                possíveis. Google Meet geralmente funciona bem.
+              </p>
+            </div>
           </div>
           <div className="step">
-            <span className="step-number">3</span>
-            <span className="step-title">
-              Iniciaremos a construção do seu projeto juntos
+            <span className="step-dot">
+              <IconPlayerPlayFilled />
             </span>
+            <div className="title-subtitle">
+              <div className="Number-title">
+                <span className="step-number">3.</span>
+                <span className="step-title">
+                  Iniciaremos a construção do seu projeto juntos
+                </span>
+              </div>
+              <p className="step-description">
+                Quando o contrato for assinado e todas as metas definidas,
+                podemos iniciar a primeira sprint.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -38,6 +77,7 @@ const ContactOneForm = () => {
             justifyContent: "center",
             padding: "1rem",
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.25)",
+            color: "#f87000",
           }}
         >
           Fale Conosco
@@ -105,7 +145,7 @@ const ContactOneForm = () => {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 
